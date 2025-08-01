@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: meta-webhook
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
